@@ -9,7 +9,7 @@ import {
   Typography,
   Box,
 } from "@mui/material";
-import Navbar from "../components/Navbar";
+import Navbar from "../Components/Navbar";
 import { db } from "../firebase/config";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";

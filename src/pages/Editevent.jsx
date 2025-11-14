@@ -5,7 +5,7 @@ import { db } from "../firebase/config";
 import { Box, Typography, Button, CircularProgress, TextField } from "@mui/material";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
-import Navbar from '../components/Navbar'
+import Navbar from '../Components/Navbar'
 import swal from "sweetalert";
 import Footer from "../Components/Footer";
 

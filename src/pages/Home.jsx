@@ -3,7 +3,7 @@ import { Container, Row, Col, } from "react-bootstrap";
 import { Button, Card, Typography } from "@mui/material";
 import { FaCalendarAlt, FaUsers, FaEdit } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Navbar from '../components/Navbar'
+import Navbar from '../Components/Navbar'
 import Footer from "../Components/Footer";
 
 

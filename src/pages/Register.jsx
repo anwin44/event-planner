@@ -4,7 +4,7 @@ import { auth } from "../firebase/config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Container, Row, Col } from "react-bootstrap";
 import { Card, CardContent, TextField, Button, Typography, Box } from "@mui/material";
-import Navbar from '../components/Navbar'
+import Navbar from '../Components/Navbar'
 import Footer from "../Components/Footer";
 
 
