@@ -2,7 +2,7 @@
 import React from "react";
 import { Card, CardContent, Typography, Button, Box, Chip } from "@mui/material";
 
-function EventCard({ id, title, date, time, desc, onEdit, onDelete, isReminder }) {
+function Eventcard({ id, title, date, time, desc, onEdit, onDelete, isReminder }) {
   return (
     <Card
       sx={{
@@ -61,4 +61,4 @@ function EventCard({ id, title, date, time, desc, onEdit, onDelete, isReminder }
   );
 }
 
-export default EventCard;
+export default Eventcard;
