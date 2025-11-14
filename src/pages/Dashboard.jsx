@@ -12,7 +12,7 @@ import {
   Select,
   MenuItem,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Search } from "@mui/icons-material";
 import Eventcard from "../Components/Eventcard";
 import { db } from "../firebase/config";
@@ -21,6 +21,8 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
 function Dashboard() {
+  const navigate = useNavigate();
+
   const [events, setEvents] = useState([]);
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all");
@@ -46,9 +48,10 @@ function Dashboard() {
   };
 
   // Edit event (navigate to edit page)
-  const handleEdit = (id) => {
-    window.location.href = `/edit-event/${id}`;
-  };
+ const handleEdit = (id) => {
+  navigate(`/edit-event/${id}`);
+};
+
 
   // Filter + Search
   const filteredEvents = events.filter((event) => {
