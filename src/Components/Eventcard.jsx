@@ -1,6 +1,6 @@
-// src/components/EventCard.jsx
+// src/Components/Eventcard.jsx
 import React from "react";
-import { Card, CardContent, Typography, Button, Box, Chip } from "@mui/material";
+import { Card, CardContent, Typography, Button, Box } from "@mui/material";
 
 function Eventcard({ id, title, date, time, desc, onEdit, onDelete, isReminder }) {
   return (
@@ -11,6 +11,7 @@ function Eventcard({ id, title, date, time, desc, onEdit, onDelete, isReminder }
         boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
         transition: "0.3s",
         "&:hover": { transform: "scale(1.03)" },
+        border: isReminder ? "2px solid #ff9800" : "none", // highlight if reminder
       }}
     >
       <CardContent>
@@ -26,16 +27,6 @@ function Eventcard({ id, title, date, time, desc, onEdit, onDelete, isReminder }
         <Typography variant="body2" sx={{ mt: 1 }}>
           {desc}
         </Typography>
-
-        {/* Reminder Badge */}
-        {isReminder && (
-          <Chip
-            label="⏰ Reminder: Tomorrow"
-            color="warning"
-            size="small"
-            sx={{ mt: 1 }}
-          />
-        )}
 
         {/* Buttons */}
         <Box sx={{ mt: 2, display: "flex", justifyContent: "space-between" }}>
