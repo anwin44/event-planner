@@ -18,7 +18,7 @@ const validationSchema = Yup.object({
   description: Yup.string().required("Description is required"),
 });
 
-function EditEvent() {
+function Editevent() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [eventData, setEventData] = useState(null);
@@ -171,4 +171,4 @@ function EditEvent() {
   );
 }
 
-export default EditEvent;
+export default Editevent;
