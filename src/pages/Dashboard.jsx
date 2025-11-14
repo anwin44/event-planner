@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Search } from "@mui/icons-material";
-import Eventcard from "../Components/EventCard";
+import Eventcard from "../components/EventCard";
 import { db } from "../firebase/config";
 import { collection, onSnapshot, query, orderBy, doc, deleteDoc } from "firebase/firestore";
 import Navbar from "../Components/Navbar";
